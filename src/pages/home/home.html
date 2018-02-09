@@ -6,15 +6,17 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content >
+<ion-content>
+  <div class="divider" showWhen="android"></div>
+
   <ion-list>
     <button ion-item (click)="onOpenProjects()">
       Projects
     </button>
-    <button ion-item>
+    <button ion-item (click)="onOpenActivities()">
       Activities
     </button> 
-    <button ion-item>
+    <button ion-item (click)="onOpenRisks()">
       Risks
     </button> 
   </ion-list>
