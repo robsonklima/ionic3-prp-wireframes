@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { ActivitiesPage } from '../activities/activities';
 import { RecomendationsPage } from '../recomendations/recomendations';
 import { RisksPage } from '../risks/risks';
@@ -9,10 +9,14 @@ import { RisksPage } from '../risks/risks';
   templateUrl: 'project.html'
 })
 export class ProjectPage {
+  item: any;
 
   constructor(
-    public navCtrl: NavController
-  ) {}
+    private navCtrl: NavController,
+    private navParams: NavParams
+  ) {
+    this.item = this.navParams.get('item');
+  }
 
   public onOpenActivities() {
     this.navCtrl.push(ActivitiesPage);

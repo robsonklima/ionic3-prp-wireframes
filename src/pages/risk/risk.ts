@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'risk-page',
   templateUrl: 'risk.html'
 })
 export class RiskPage {
+  item: any;
 
   constructor(
-    public navCtrl: NavController
-  ) {}
+    private navCtrl: NavController,
+    private navParams: NavParams
+  ) {
+    this.item = this.navParams.get('item');
+  }
 }

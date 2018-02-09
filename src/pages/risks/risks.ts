@@ -11,15 +11,18 @@ export class RisksPage {
   items = [
     {
       title: "Risk A",
-      content: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum"
+      contentA: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum",
+      contentB: "Excepteur sint occaecat cupidatat non qui officia deserunt mollit"
     },
     {
       title: "Risk B",
-      content: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur"
+      contentA: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur",
+      contentB: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit"
     },
     {
       title: "Risk C",
-      content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit"
+      contentA: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit",
+      contentB: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur"
     }
   ]
 
@@ -27,7 +30,7 @@ export class RisksPage {
     public navCtrl: NavController
   ) {}
 
-  public onOpenRisk() {
-    this.navCtrl.push(RiskPage);
+  public onOpenRisk(item: any) {
+    this.navCtrl.push(RiskPage, { item: item });
   }
 }

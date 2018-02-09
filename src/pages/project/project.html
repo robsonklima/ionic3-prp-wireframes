@@ -1,18 +1,30 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Project Alpha
+      Project
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <div class="divider" showWhen="android"></div>
+
+  <ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col text-center>
+          <h2>{{ item.title }}</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-item text-wrap no-lines>
+          <p text-center>{{ item.content }}</p>
+        </ion-item>
+      </ion-row> 
+    </ion-grid>
+  </ion-list>
   
   <ion-list>
-    <button ion-item>
-      Info
-    </button>
     <button ion-item (click)="onOpenActivities()">
       Activities
     </button>

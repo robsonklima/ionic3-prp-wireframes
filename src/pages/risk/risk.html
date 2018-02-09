@@ -1,11 +1,46 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Risk A
+      Risk
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <p>Risk</p>
+  <div class="divider" showWhen="android"></div>
+
+  <ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col text-center>
+          <h2>{{ item.title }}</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <hr />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-item text-wrap no-lines>
+          <p text-center>
+            <b>
+              Cause -
+            </b> 
+            {{ item.contentA }}
+          </p>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-item text-wrap no-lines>
+          <p>
+            <b>
+              Effect -
+            </b> 
+            {{ item.contentB }}
+          </p>
+        </ion-item>
+      </ion-row> 
+    </ion-grid>
+  </ion-list>
 </ion-content>

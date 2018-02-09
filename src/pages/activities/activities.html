@@ -16,14 +16,11 @@
   <div class="divider" showWhen="android"></div>
 
   <ion-list>
-    <button ion-item (click)="onOpenActivity()">
-      Activity Alpha
-    </button>
-    <button ion-item (click)="onOpenActivity()">
-      Activity Beta
-    </button>
-    <button ion-item (click)="onOpenActivity()">
-      Activity Charlie
+    <button 
+      ion-item 
+      *ngFor="let item of items; let i = index"
+      (click)="onOpenActivity(item)">
+      {{ item.title }}
     </button>
   </ion-list>
 </ion-content>
