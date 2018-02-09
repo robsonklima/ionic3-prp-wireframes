@@ -5,14 +5,15 @@ recomendations-page {
 
     .buttons {
         margin-top: -16px;
+        padding-left: 10px;
+        padding-right: 20px;
     }
 
     .percentage-occurrences {
-        padding-left: 4px !important;
         opacity: 0.9 !important;
     }
 
     .card-button {
-        padding-right: 6px !important;
+        //padding-right: 6px !important;
     }
 }
