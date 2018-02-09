@@ -8,13 +8,19 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ProjectsPage } from '../pages/projects/projects';
 import { ProjectPage } from '../pages/project/project';
+import { ActivitiesPage } from '../pages/activities/activities';
+import { ActivityPage } from '../pages/activity/activity';
+import { RecomendationsPage } from '../pages/recomendations/recomendations';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ProjectsPage,
-    ProjectPage
+    ProjectPage,
+    ActivitiesPage,
+    ActivityPage,
+    RecomendationsPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +31,10 @@ import { ProjectPage } from '../pages/project/project';
     MyApp,
     HomePage,
     ProjectsPage,
-    ProjectPage
+    ProjectPage,
+    ActivitiesPage,
+    ActivityPage,
+    RecomendationsPage
   ],
   providers: [
     StatusBar,
