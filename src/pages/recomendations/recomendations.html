@@ -41,7 +41,8 @@
             small
             outline
             clear
-            color="danger">
+            color="danger"
+            (click)="onDiscard(item, i)">
             DISCARD
           </button>
         </ion-col>
@@ -52,7 +53,8 @@
             small
             outline
             clear
-            color="secondary">
+            color="secondary"
+            (click)="onAccept(item, i)">
             ACCEPT
           </button>
         </ion-col>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ToastController, AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'recomendations-page',
@@ -25,6 +25,64 @@ export class RecomendationsPage {
   ]
 
   constructor(
-    public navCtrl: NavController
+    private navCtrl: NavController,
+    private toastCtrl: ToastController,
+    private alertCtrl: AlertController
   ) {}
+
+  public onAccept(item: any, i: number) {
+    const alert = this.alertCtrl.create({
+      title: 'Confirm',
+      message: 'Do you wish to accept this recomendation?',
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: () => { }
+        },
+        {
+          text: 'Agree',
+          handler: () => {
+            this.exibirToast('Recomendation accepted').then(() => {
+              this.items.splice(i, 1);
+            });
+          }
+        }
+      ]
+    });
+
+    alert.present();
+  }
+
+  public onDiscard(item: any, i: number) {
+    const alert = this.alertCtrl.create({
+      title: 'Confirm',
+      message: 'Do you wish to discard this recomendation?',
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: () => { }
+        },
+        {
+          text: 'Agree',
+          handler: () => {
+            this.exibirToast('Recomendation rejected').then(() => {
+              this.items.splice(i, 1);
+            });
+          }
+        }
+      ]
+    });
+
+    alert.present();
+  }
+
+  private exibirToast(mensagem: string): Promise<any> {
+    return new Promise((resolve, reject) => {
+      const toast = this.toastCtrl.create({
+        message: mensagem, duration: 3000, position: 'bottom'
+      });
+
+      resolve(toast.present());
+    });
+  }
 }
