@@ -3,17 +3,16 @@ recomendations-page {
         background-color: #F8F8F8;
     }
 
+    ion-grid {
+        padding-right: 16px !important;
+    }
+
     .buttons {
         margin-top: -16px;
         padding-left: 10px;
-        padding-right: 20px;
     }
 
     .percentage-occurrences {
         opacity: 0.9 !important;
-    }
-
-    .card-button {
-        //padding-right: 6px !important;
     }
 }

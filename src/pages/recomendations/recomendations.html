@@ -22,7 +22,7 @@
 
     <ion-grid tappable class="buttons">
       <ion-row>
-        <ion-col col-5>
+        <ion-col col-6>
           <button
             class="percentage-occurrences"
             ion-button 
@@ -34,24 +34,26 @@
             {{ item.percentageOfOccurrences }} OCCURRED
           </button>
         </ion-col>
-        <ion-col col-4>
+        <ion-col col-3 text-right>
           <button 
             class="card-button"
             ion-button 
             small
             outline
+            clear
             color="danger">
             DISCARD
           </button>
         </ion-col>
-        <ion-col col-3>
+        <ion-col col-3 text-right>
           <button
             class="card-button"
             ion-button 
             small
             outline
+            clear
             color="secondary">
-            ADMIT
+            ACCEPT
           </button>
         </ion-col>
       </ion-row>
