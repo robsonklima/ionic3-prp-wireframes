@@ -5,10 +5,13 @@
     </ion-toolbar>
   </ion-header>
   <ion-content>
+    <div class="divider" showWhen="android"></div>
+
     <ion-list>
-      <button ion-item (click)="onHomePage()">
-        Home
-      </button>
+      <ion-item >
+        <ion-icon color="dark-silver" name="contact" item-start></ion-icon>
+        <span class="user-name">User Name</span>
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
