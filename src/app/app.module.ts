@@ -11,6 +11,8 @@ import { ProjectPage } from '../pages/project/project';
 import { ActivitiesPage } from '../pages/activities/activities';
 import { ActivityPage } from '../pages/activity/activity';
 import { RecomendationsPage } from '../pages/recomendations/recomendations';
+import { RisksPage } from '../pages/risks/risks';
+import { RiskPage } from '../pages/risk/risk';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { RecomendationsPage } from '../pages/recomendations/recomendations';
     ProjectPage,
     ActivitiesPage,
     ActivityPage,
-    RecomendationsPage
+    RecomendationsPage,
+    RisksPage,
+    RiskPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,9 @@ import { RecomendationsPage } from '../pages/recomendations/recomendations';
     ProjectPage,
     ActivitiesPage,
     ActivityPage,
-    RecomendationsPage
+    RecomendationsPage,
+    RisksPage,
+    RiskPage
   ],
   providers: [
     StatusBar,

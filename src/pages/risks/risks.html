@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Risks
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button 
+      ion-item 
+      *ngFor="let item of items; let i = index"
+      (click)="onOpenRisk()">
+      {{ item.title }}
+    </button>
+  </ion-list>
+</ion-content>

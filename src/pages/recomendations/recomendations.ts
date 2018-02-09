@@ -9,18 +9,18 @@ export class RecomendationsPage {
   items = [
     {
       title: "Risk A",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore",
       percentageOfOccurrences: "35%"
     },
     {
       title: "Risk B",
-      content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+      content: "Sed ut perspiciatis unde omnis iste natus error sit laudantium, totam rem aperiam",
       percentageOfOccurrences: "20%"
     },
     {
       title: "Risk C",
       content: "Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
-      percentageOfOccurrences: "20%"
+      percentageOfOccurrences: "28%"
     }
   ]
 
